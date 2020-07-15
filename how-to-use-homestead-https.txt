@@ -1,0 +1,33 @@
+------------------------------------------------------------------------------------------------------------
+# Read the following articles
+    https://medium.com/dinssa/ssl-certificates-laravel-homestead-windows-https-f83ec8b3198
+    https://www.eaglepeakweb.com/blog/how-to-enable-ssl-https-tls-laravel-homestead
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+# https://stackoverflow.com/questions/45263265/use-ssl-on-laravel-homestead
+
+# I assume you are using Windows + Vagrant machine with Homestead.In this case laravel-cashier.local is your web application.
+# You need to copy the certificate inside Vagrant, in Nginx to external folder:
+
+    $ sudo cp /etc/nginx/ssl/ca.homestead.your-domain.crt ~/your-project/homestead/certs/
+
+# In Windows environment you can install this certificate with double-click and select the next specific storage:
+1. Double click
+2. Click "Install Certificate"
+3. Choose "Local Machine"
+4. Choose "Place all certificates in the following store"
+5. Click "Browse"
+6. Choose "Trusted Root Certification Authorities"
+7. Click "OK"
+8. Click "Next"
+9. Click "Finish"
+
+Restart your browser. Done.
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+More info about how to add certificate: https://technet.microsoft.com/en-us/library/cc754841(v=ws.11).aspx#BKMK_addlocal
+
+NOTE: This is valid for specific browser: Google Chrome
+------------------------------------------------------------------------------------------------------------
