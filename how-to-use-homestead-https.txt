@@ -1,4 +1,8 @@
 ------------------------------------------------------------------------------------------------------------
+Everytime you restart the vagrant you should redoing this step to gain access to https
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
 # Read the following articles
     https://medium.com/dinssa/ssl-certificates-laravel-homestead-windows-https-f83ec8b3198
     https://www.eaglepeakweb.com/blog/how-to-enable-ssl-https-tls-laravel-homestead
