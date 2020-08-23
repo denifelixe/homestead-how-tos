@@ -11,7 +11,12 @@ Everytime you restart the vagrant you should redoing this step to gain access to
 ------------------------------------------------------------------------------------------------------------
 # https://stackoverflow.com/questions/45263265/use-ssl-on-laravel-homestead
 
-# I assume you are using Windows + Vagrant machine with Homestead.In this case laravel-cashier.local is your web application.
+# I assume you are using Windows + Vagrant machine with Homestead.
+
+# First you need to SSH into your vagrant
+    
+    $ vagrant ssh
+    
 # You need to copy the certificate inside Vagrant, in Nginx to external folder:
 
     $ sudo cp /etc/nginx/ssl/ca.homestead.your-domain.crt ~/your-project/homestead/certs/
