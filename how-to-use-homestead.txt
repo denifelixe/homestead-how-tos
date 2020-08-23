@@ -49,11 +49,14 @@ ssh-keygen -t rsa -C "your-email@example.com"
 ---------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------
-# run command below to start vagrant in your project directory
-vagrant box add laravel/homestead
-vagrant up
+# Run command below to start vagrant in your project directory
+    vagrant box add laravel/homestead
+    vagrant up
 
 # Once you have added the domain to your hosts file and launched the Vagrant box you will be able to access the site via your web browser:
+    http://your-domain.local
 
-http://your-domain.local
+# To stop the vagrant, run this command
+    vagrant destroy
+
 ---------------------------------------------------------------------------
