@@ -55,8 +55,13 @@ ssh-keygen -t rsa -C "your-email@example.com"
 
 # Once you have added the domain to your hosts file and launched the Vagrant box you will be able to access the site via your web browser:
     http://your-domain.local
+    
+# Check the state of the machines Vagrant is managing
+    vagrant status
+   
+# How to show Vagrant box version used in a particular directory
+    vagrant box outdated
 
 # To stop the vagrant, run this command
     vagrant destroy
-
 ---------------------------------------------------------------------------
