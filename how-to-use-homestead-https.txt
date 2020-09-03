@@ -20,6 +20,14 @@ Everytime you restart the vagrant you should redoing this step to gain access to
 # You need to copy the certificate inside Vagrant, in Nginx to external folder:
 
     $ sudo cp /etc/nginx/ssl/ca.homestead.your-domain.crt ~/your-project/homestead/certs/
+    
+NOTES: 
+    
+    $ sudo cp /etc/ssl/certs/ca.homestead.your-domain.crt ~/your-project-folder-you-set-in-homestead-yaml/homestead/certs/
+
+*For Version v11.x SSL certificates are now installed at /etc/ssl/certs instead of /etc/nginx/ssl
+    https://github.com/laravel/homestead/issues/1467
+    https://github.com/laravel/homestead/releases/tag/v11.0.0
 
 # In Windows environment you can install this certificate with double-click and select the next specific storage:
 1. Double click
