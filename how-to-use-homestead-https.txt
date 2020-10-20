@@ -33,7 +33,7 @@ NOTES:
     (ACTIVE)
     $ sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
     if the destination directory you want is not exist, you can create with mkdir command
-    $ mkdir ~/your-project/homestead/certs  &&  sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
+    $ mkdir -p ~/your-project/homestead/certs  &&  sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
     (install ca.homestead.homestead.crt only, it will activate the https for all sites)
 
 # In Windows environment you can install this certificate with double-click and select the next specific storage:
