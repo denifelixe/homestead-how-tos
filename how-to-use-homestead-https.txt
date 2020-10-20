@@ -27,7 +27,12 @@ NOTES:
 *https://github.com/laravel/homestead/issues/1467
 *https://github.com/laravel/homestead/releases/tag/v11.0.0
     
+    (MAYBE DEPRECATE ALSO)
     $ sudo cp /etc/ssl/certs/ca.homestead.your-domain.crt ~/your-project-folder-you-set-in-homestead-yaml/homestead/certs/
+    
+    (ACTIVE)
+    $ sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
+    (install ca.homestead.homestead.crt only, it will activate the https for all sites)
 
 # In Windows environment you can install this certificate with double-click and select the next specific storage:
 1. Double click
