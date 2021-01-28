@@ -32,6 +32,9 @@ Everytime you restart the vagrant you should redoing this step to gain access to
     
     (ACTIVE)
     $ sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
+    
+    OR
+    
     if the destination directory you want is not exist, you can create with mkdir command
     $ mkdir -p ~/your-project/homestead/certs  &&  sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
     (install ca.homestead.homestead.crt only, it will activate the https for all sites)
