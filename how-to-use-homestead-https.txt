@@ -21,22 +21,22 @@ Everytime you restart the vagrant you should redoing this step to gain access to
     
     (DEPRECATED)
     $ sudo cp /etc/nginx/ssl/ca.homestead.your-domain.crt ~/your-project/homestead/certs/
+    
+    (DEPRECATED)
+    $ sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
     
-    NOTES: (MAYBE DEPRECATE ALSO)
+    NOTES:
         *For Version v11.x SSL certificates are now installed at /etc/ssl/certs instead of /etc/nginx/ssl
         *https://github.com/laravel/homestead/issues/1467
         *https://github.com/laravel/homestead/releases/tag/v11.0.0
     
-    (MAYBE DEPRECATE ALSO)
-    $ sudo cp /etc/ssl/certs/ca.homestead.your-domain.crt ~/your-project-folder-you-set-in-homestead-yaml/homestead/certs/
-    
     (ACTIVE)
-    $ sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
+    $ sudo cp /etc/ssl/certs/ca.homestead.your-domain.crt ~/your-project-folder-you-set-in-homestead-yaml/homestead/certs/
     
     OR
     
     if the destination directory you want is not exist, you can create with mkdir command
-    $ mkdir -p ~/your-project/homestead/certs  &&  sudo cp /etc/nginx/ssl/ca.homestead.homestead.crt ~/your-project/homestead/certs
+    $ mkdir -p ~/your-project/homestead/certs  &&  sudo cp /etc/ssl/certs/ca.homestead.homestead.crt ~/your-project/homestead/certs
     (install ca.homestead.homestead.crt only, it will activate the https for all sites)
 
 # In Windows environment you can install this certificate with double-click and select the next specific storage:
